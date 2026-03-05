@@ -25,9 +25,9 @@ export function Footer() {
             <Image
               src="/images/pizzalogo.png"
               alt="Pizza Twice - More Than Just Great Pizza"
-              width={160}
-              height={44}
-              className="h-10 w-auto"
+              width={240}
+              height={66}
+              className="h-16 w-auto lg:h-20"
             />
             <p className="max-w-xs text-center text-sm text-muted-foreground lg:text-left">
               {"Atlantic Canada's favorite pizza since 1989. More than just great pizza."}
