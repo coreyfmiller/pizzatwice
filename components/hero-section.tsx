@@ -20,11 +20,11 @@ export function HeroSection() {
           {"Est. 1989 — Atlantic Canada"}
         </p>
         <h1 className="text-balance text-4xl font-bold leading-tight tracking-tight text-foreground md:text-5xl lg:text-7xl">
-          {"Atlantic Canada's Favorite."}{" "}
-          <span className="text-primary">{"Your Next Big Opportunity."}</span>
+          Delicious Pizzas{" "}
+          <span className="text-primary">&amp; Great Prices</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg text-muted-foreground md:text-xl">
-          {"18+ Locations. 35 Years of Success. Join the Pizza Twice Family."}
+          Enjoy mouth-watering pizzas, oven-baked subs and much more at Pizza Twice.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
