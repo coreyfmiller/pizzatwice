@@ -31,9 +31,9 @@ export function Header() {
           <Image
             src="/images/pizzalogo.png"
             alt="Pizza Twice - More Than Just Great Pizza"
-            width={240}
-            height={66}
-            className="h-16 w-auto lg:h-20"
+            width={180}
+            height={50}
+            className="h-10 w-auto lg:h-12"
             priority
           />
         </Link>
