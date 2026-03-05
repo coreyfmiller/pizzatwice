@@ -16,6 +16,14 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
 
       <div className="relative z-10 mx-auto max-w-4xl px-4 py-32 text-center lg:px-8">
+        <Image
+          src="/images/pizzalogo.png"
+          alt="Pizza Twice Logo"
+          width={320}
+          height={88}
+          className="mx-auto mb-8 h-20 w-auto lg:h-24"
+          priority
+        />
         <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">
           {"Est. 1989 — Atlantic Canada"}
         </p>
