@@ -19,9 +19,9 @@ export function HeroSection() {
         <Image
           src="/images/pizzalogo.png"
           alt="Pizza Twice Logo"
-          width={320}
-          height={88}
-          className="mx-auto mb-8 h-20 w-auto lg:h-24"
+          width={400}
+          height={110}
+          className="mx-auto mb-8 h-[100px] w-auto lg:h-[120px]"
           priority
         />
         <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">
