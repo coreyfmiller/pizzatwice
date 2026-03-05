@@ -3,11 +3,11 @@ import Link from "next/link"
 import { Facebook, Instagram, Twitter } from "lucide-react"
 
 const footerLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#about" },
-  { label: "Locations", href: "#locations" },
-  { label: "Franchise Inquiries", href: "#franchise" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/#about" },
+  { label: "Locations", href: "/#locations" },
+  { label: "Franchise Inquiries", href: "/#franchise" },
+  { label: "Contact Us", href: "/#contact" },
 ]
 
 const socialLinks = [
@@ -61,8 +61,12 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-border pt-6 text-center">
-          <p className="text-xs text-muted-foreground">
-            {"© 2026 Pizza Twice. All rights reserved."}
+          <p className="text-xs text-muted-foreground flex flex-col sm:flex-row items-center justify-center gap-2">
+            <span>© 2026 Pizza Twice. All rights reserved.</span>
+            <span className="hidden sm:inline">•</span>
+            <a href="https://fundylogic.com" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+              Built by Fundy Logic
+            </a>
           </p>
         </div>
       </div>

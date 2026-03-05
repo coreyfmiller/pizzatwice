@@ -18,7 +18,6 @@ const navLinks = [
   { label: "Menu", href: "/menu" },
   { label: "About Us", href: "/#about" },
   { label: "Locations", href: "/#locations" },
-  { label: "Franchise Inquiries", href: "/#franchise" },
   { label: "Contact Us", href: "/#contact" },
 ]
 
@@ -50,7 +49,7 @@ export function Header() {
             </Link>
           ))}
           <Button asChild className="ml-3 bg-primary text-primary-foreground hover:bg-primary/90">
-            <Link href="#franchise">Own a Franchise</Link>
+            <Link href="/#franchise">Own a Franchise</Link>
           </Button>
         </nav>
 
@@ -79,7 +78,7 @@ export function Header() {
                 asChild
                 className="mt-4 bg-primary text-primary-foreground hover:bg-primary/90"
               >
-                <Link href="#franchise" onClick={() => setOpen(false)}>
+                <Link href="/#franchise" onClick={() => setOpen(false)}>
                   Own a Franchise
                 </Link>
               </Button>
