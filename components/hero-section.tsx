@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section id="home" className="relative flex min-h-[100dvh] items-center justify-center overflow-hidden">
       <Image
-        src="/images/hero-pizza.jpg"
+        src="/images/hero-pizza2.jpg"
         alt="Delicious pepperoni pizza"
         fill
         className="object-cover"
