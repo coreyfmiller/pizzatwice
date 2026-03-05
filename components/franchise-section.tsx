@@ -1,6 +1,5 @@
 "use client"
 
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -119,14 +118,6 @@ export function FranchiseSection() {
                 </Button>
               </div>
             </form>
-
-            <Image
-              src="/images/ingredients.jpg"
-              alt="Fresh pizza ingredients including tomatoes, basil, and cheese"
-              width={640}
-              height={200}
-              className="mt-6 h-48 w-full rounded-lg object-cover shadow-lg"
-            />
           </div>
 
           <div>
