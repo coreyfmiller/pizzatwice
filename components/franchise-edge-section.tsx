@@ -35,14 +35,14 @@ export function FranchiseEdgeSection() {
                 The 16-Inch Powerhouse
               </h3>
               <p className="max-w-md text-lg leading-relaxed text-gray-300">
-                Our standard 16-inch pizza delivers unbeatable customer value while maintaining industry-leading margins. Your product is your best marketing.
+                Our standard 16-inch pizza delivers unbeatable customer value and consistent quality across all locations.
               </p>
               <div className="mt-8 flex gap-4">
                 <span className="rounded-full bg-white/10 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white backdrop-blur-sm ring-1 ring-white/20">
                   Value Dominance
                 </span>
                 <span className="rounded-full bg-primary/20 px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-primary backdrop-blur-sm ring-1 ring-primary/40">
-                  High Margin
+                  Proven Format
                 </span>
               </div>
             </div>
@@ -61,10 +61,10 @@ export function FranchiseEdgeSection() {
                 <TrendingUp className="size-5" />
               </div>
               <h3 className="mb-2 text-xl font-extrabold text-white">
-                Proven Excellence
+                Operational Excellence
               </h3>
               <p className="text-sm leading-relaxed text-gray-400">
-                35+ years of operational refinement. A supply chain built for predictability and premium quality.
+                35+ years of refinement. Systems built for consistency, fresh ingredients, and local sourcing.
               </p>
             </div>
           </div>
@@ -75,7 +75,7 @@ export function FranchiseEdgeSection() {
               src="/images/family.png"
               alt="Community legacy and family values"
               fill
-              className="object-cover transition-transform duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0"
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent p-6 flex flex-col justify-end">
               <div className="mb-3 inline-flex size-10 items-center justify-center rounded-xl bg-blue-500/20 backdrop-blur-md text-blue-400 ring-1 ring-blue-500/40">
