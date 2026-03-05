@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation"
 import { Metadata } from "next"
+import Image from "next/image"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { locations } from "@/data/locations"
@@ -139,10 +140,20 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                     </nav>
 
                     {/* Hero Section */}
-                    <div className="rounded-3xl bg-muted/30 border border-border overflow-hidden mb-12 relative isolate flex flex-col items-center justify-center p-12 text-center sm:p-24 shadow-sm">
-                        <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-                            <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-primary to-orange-500 opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"></div>
+                    <div className="rounded-3xl overflow-hidden mb-12 relative isolate flex flex-col items-center justify-center p-12 text-center sm:p-24 shadow-sm min-h-[340px]">
+                        {/* Background pizza image */}
+                        <div className="absolute inset-0 -z-20">
+                            <Image
+                                src="/images/hero-pizza2.png"
+                                alt="Pizza background"
+                                fill
+                                className="object-cover"
+                                quality={85}
+                                priority
+                            />
                         </div>
+                        {/* Dark overlay */}
+                        <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/85 via-background/70 to-background/90" />
 
                         <h1 className="text-4xl font-extrabold tracking-tight text-foreground sm:text-6xl mb-4">
                             {location.name}
@@ -153,17 +164,8 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
                         <div className="flex gap-4 justify-center flex-wrap">
                             <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                                <Link href={location.website.startsWith("http") ? location.website : "/menu"}>
-                                    {location.status.includes("Accepting Online Order") ? "Order Online" : "View Menu"}
-                                </Link>
+                                <Link href="/menu">View Menu</Link>
                             </Button>
-                            {location.website.startsWith("http") && (
-                                <Button asChild variant="outline" size="lg" className="border-border text-foreground hover:bg-muted">
-                                    <a href={location.website} target="_blank" rel="noopener noreferrer">
-                                        Store Website <ExternalLink className="ml-2 size-4" />
-                                    </a>
-                                </Button>
-                            )}
                             <Button asChild variant="secondary" size="lg">
                                 <a href={`tel:${location.phone}`}>
                                     <Phone className="mr-2 size-4" /> Call to Order

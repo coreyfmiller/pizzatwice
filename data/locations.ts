@@ -18,7 +18,7 @@ export const locations: Location[] = [
         phone: "506-446-9111",
         website: "https://www.pizzatwiceoromocto.ca",
         hours: "Sun-Thu: 11:00am - 10:00pm | Fri-Sat: 11:00am - 11:00pm",
-        status: "Accepting Online Order"
+        status: "Order by Phone"
     },
     {
         slug: "edmundston",
@@ -26,9 +26,9 @@ export const locations: Location[] = [
         address: "56 CH, Edmundston, NB, E3V 1V3",
         province: "NB",
         phone: "506-739-1976",
-        website: "https://www.pizzatwice-edmundston.com",
+        website: "/menu",
         hours: "Tue, Wed, Sun: 11:00am - 8:00pm | Thu-Sat: 11:00am - 9:00pm | Mon: Closed",
-        status: "Accepting Online Order"
+        status: "Order by Phone"
     },
     {
         slug: "nackawic",
@@ -38,7 +38,7 @@ export const locations: Location[] = [
         phone: "506-575-0101",
         website: "/menu",
         hours: "Mon-Fri: 11:30am - 7:00pm | Sat: 1:00pm - 7:00pm | Sun: CLOSED",
-        status: "Online Order Coming Soon"
+        status: "Order by Phone"
     },
     {
         slug: "hartland",

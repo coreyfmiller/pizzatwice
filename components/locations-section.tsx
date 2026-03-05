@@ -105,8 +105,8 @@ export function LocationsSection() {
                         variant="secondary"
                         className="w-full"
                       >
-                        <Link href={location.website.startsWith('http') ? location.website : '/menu'}>
-                          {location.status.includes("Accepting Online Order") ? "Order Online" : "View Menu"}
+                        <Link href="/menu">
+                          View Menu
                         </Link>
                       </Button>
                       <Button
