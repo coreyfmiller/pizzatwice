@@ -16,9 +16,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
     params,
 }: {
-    params: { slug: string }
+    params: Promise<{ slug: string }>
 }): Promise<Metadata> {
-    const location = locations.find((l) => l.slug === params.slug)
+    const { slug } = await params
+    const location = locations.find((l) => l.slug === slug)
     if (!location) {
         return { title: "Location Not Found | Pizza Twice" }
     }
@@ -67,8 +68,9 @@ export async function generateMetadata({
     }
 }
 
-export default function LocationPage({ params }: { params: { slug: string } }) {
-    const location = locations.find((l) => l.slug === params.slug)
+export default async function LocationPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params
+    const location = locations.find((l) => l.slug === slug)
 
     if (!location) {
         return notFound()
