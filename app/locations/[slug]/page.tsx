@@ -163,10 +163,17 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                         </p>
 
                         <div className="flex gap-4 justify-center flex-wrap">
+                            {location.status === "Accepting Online Order" && (
+                                <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                                    <a href={location.website} target="_blank" rel="noopener noreferrer">
+                                        Order Online
+                                    </a>
+                                </Button>
+                            )}
                             <Button asChild size="lg" className="bg-[#2D5A27] text-white hover:bg-[#2D5A27]/85">
                                 <Link href={`/menu?location=${location.slug}`}>View Menu</Link>
                             </Button>
-                            <Button asChild variant="secondary" size="lg">
+                            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
                                 <a href={`tel:${location.phone}`}>
                                     <Phone className="mr-2 size-4" /> Call to Order
                                 </a>

@@ -100,6 +100,13 @@ export function LocationsSection() {
                           View Location Details
                         </Link>
                       </Button>
+                      {location.status === "Accepting Online Order" && (
+                        <Button asChild className="w-full bg-primary/80 text-primary-foreground hover:bg-primary/70">
+                          <a href={location.website} target="_blank" rel="noopener noreferrer">
+                            Order Online
+                          </a>
+                        </Button>
+                      )}
                       <Button
                         asChild
                         className="w-full bg-[#2D5A27] text-white hover:bg-[#2D5A27]/85"
@@ -110,8 +117,7 @@ export function LocationsSection() {
                       </Button>
                       <Button
                         asChild
-                        variant="outline"
-                        className="w-full border-border text-foreground hover:bg-muted"
+                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
                       >
                         <a href={`tel:${location.phone}`}>Call {location.phone}</a>
                       </Button>
