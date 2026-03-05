@@ -104,7 +104,7 @@ export function LocationsSection() {
                         asChild
                         className="w-full bg-[#2D5A27] text-white hover:bg-[#2D5A27]/85"
                       >
-                        <Link href="/menu">
+                        <Link href={`/menu?location=${location.slug}`}>
                           View Menu
                         </Link>
                       </Button>

@@ -1,6 +1,8 @@
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import { Info, Pizza, Flame } from "lucide-react"
+import { locations } from "@/data/locations"
+import { LocationBanner } from "@/components/location-banner"
 
 export const metadata = {
     title: "Menu | Pizza Twice",
@@ -59,13 +61,23 @@ const uBake = [
     "12'' u-bake garlic fingers"
 ]
 
-export default function MenuPage() {
+export default async function MenuPage({
+    searchParams,
+}: {
+    searchParams: Promise<{ location?: string }>
+}) {
+    const { location: locationSlug } = await searchParams
+    const activeLocation = locationSlug
+        ? locations.find((l) => l.slug === locationSlug) ?? null
+        : null
+
     return (
         <>
             <Header />
             <main className="min-h-[100dvh] pt-28 pb-20 bg-background text-foreground">
                 <div className="mx-auto max-w-6xl px-4 lg:px-8">
 
+                    {activeLocation && <LocationBanner location={activeLocation} />}
                     <div className="mb-16 text-center">
                         <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl border-b-4 border-primary inline-block pb-3">
                             Our Menu
