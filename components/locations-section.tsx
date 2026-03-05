@@ -102,8 +102,7 @@ export function LocationsSection() {
                       </Button>
                       <Button
                         asChild
-                        variant="secondary"
-                        className="w-full"
+                        className="w-full bg-[#2D5A27] text-white hover:bg-[#2D5A27]/85"
                       >
                         <Link href="/menu">
                           View Menu

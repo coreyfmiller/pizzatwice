@@ -18,7 +18,7 @@ export const locations: Location[] = [
         phone: "506-446-9111",
         website: "https://www.pizzatwiceoromocto.ca",
         hours: "Sun-Thu: 11:00am - 10:00pm | Fri-Sat: 11:00am - 11:00pm",
-        status: "Order by Phone"
+        status: "Accepting Online Order"
     },
     {
         slug: "edmundston",
