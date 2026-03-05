@@ -49,7 +49,7 @@ export function Header() {
             </Link>
           ))}
           <Button asChild variant="primary-brand" className="ml-3">
-            <Link href="/#franchise">Own a Franchise</Link>
+            <Link href="/#franchise-edge">Own a Franchise</Link>
           </Button>
         </nav>
 
@@ -79,7 +79,7 @@ export function Header() {
                 variant="primary-brand"
                 className="mt-4"
               >
-                <Link href="/#franchise" onClick={() => setOpen(false)}>
+                <Link href="/#franchise-edge" onClick={() => setOpen(false)}>
                   Own a Franchise
                 </Link>
               </Button>

@@ -42,7 +42,7 @@ export function HeroSection() {
             variant="primary-brand"
             className="h-12 px-8 text-base shadow-lg shadow-[#E63946]/20"
           >
-            <Link href="#franchise">Own a Franchise</Link>
+            <Link href="#franchise-edge">Own a Franchise</Link>
           </Button>
           <Button
             asChild
