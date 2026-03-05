@@ -13,8 +13,8 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
-        <AboutSection />
         <LocationsSection />
+        <AboutSection />
         <FranchiseEdgeSection />
         <FranchiseSection />
         <ContactSection />
