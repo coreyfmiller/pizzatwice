@@ -23,7 +23,7 @@ export function AboutSection() {
         <div className="grid items-center gap-12 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-lg">
             <Image
-              src="/images/about-kitchen.jpg"
+              src="/images/about-kitchen.png"
               alt="Pizza Twice kitchen with chef preparing fresh pizza"
               width={640}
               height={420}
