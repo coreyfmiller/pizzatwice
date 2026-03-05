@@ -48,7 +48,7 @@ export function Header() {
               {link.label}
             </Link>
           ))}
-          <Button asChild className="ml-3 bg-primary text-primary-foreground hover:bg-primary/90">
+          <Button asChild variant="primary-brand" className="ml-3">
             <Link href="/#franchise">Own a Franchise</Link>
           </Button>
         </nav>
@@ -76,7 +76,8 @@ export function Header() {
               ))}
               <Button
                 asChild
-                className="mt-4 bg-primary text-primary-foreground hover:bg-primary/90"
+                variant="primary-brand"
+                className="mt-4"
               >
                 <Link href="/#franchise" onClick={() => setOpen(false)}>
                   Own a Franchise

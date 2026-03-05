@@ -39,15 +39,16 @@ export function HeroSection() {
           <Button
             asChild
             size="lg"
-            className="h-12 px-8 text-base bg-primary text-primary-foreground hover:bg-primary/90"
+            variant="primary-brand"
+            className="h-12 px-8 text-base shadow-lg shadow-[#E63946]/20"
           >
             <Link href="#franchise">Own a Franchise</Link>
           </Button>
           <Button
             asChild
             size="lg"
-            variant="outline"
-            className="h-12 px-8 text-base border-border text-foreground hover:bg-muted"
+            variant="tertiary-brand"
+            className="h-12 px-8 text-base"
           >
             <Link href="#locations">Find a Location</Link>
           </Button>

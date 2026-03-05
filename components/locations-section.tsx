@@ -94,22 +94,24 @@ export function LocationsSection() {
                     <div className="mt-auto flex flex-col gap-2 pt-5">
                       <Button
                         asChild
-                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                        variant="tertiary-brand"
+                        className="w-full"
                       >
                         <Link href={`/locations/${location.slug}`}>
                           View Location Details
                         </Link>
                       </Button>
                       {location.status === "Accepting Online Order" && (
-                        <Button asChild className="w-full bg-primary/80 text-primary-foreground hover:bg-primary/70">
-                          <a href={location.website} target="_blank" rel="noopener noreferrer">
+                        <Button asChild variant="primary-brand" className="w-full">
+                          <Link href={location.website} target={location.website.startsWith('http') ? "_blank" : undefined} rel={location.website.startsWith('http') ? "noopener noreferrer" : undefined}>
                             Order Online
-                          </a>
+                          </Link>
                         </Button>
                       )}
                       <Button
                         asChild
-                        className="w-full bg-[#2D5A27] text-white hover:bg-[#2D5A27]/85"
+                        variant="menu-brand"
+                        className="w-full border-none"
                       >
                         <Link href={`/menu?location=${location.slug}`}>
                           View Menu
@@ -117,7 +119,8 @@ export function LocationsSection() {
                       </Button>
                       <Button
                         asChild
-                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                        variant="tertiary-brand"
+                        className="w-full"
                       >
                         <a href={`tel:${location.phone}`}>Call {location.phone}</a>
                       </Button>

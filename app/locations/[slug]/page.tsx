@@ -164,16 +164,16 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
 
                         <div className="flex gap-4 justify-center flex-wrap">
                             {location.status === "Accepting Online Order" && (
-                                <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
-                                    <a href={location.website} target="_blank" rel="noopener noreferrer">
+                                <Button asChild size="lg" variant="primary-brand">
+                                    <Link href={location.website} target={location.website.startsWith('http') ? "_blank" : undefined} rel={location.website.startsWith('http') ? "noopener noreferrer" : undefined}>
                                         Order Online
-                                    </a>
+                                    </Link>
                                 </Button>
                             )}
-                            <Button asChild size="lg" className="bg-[#2D5A27] text-white hover:bg-[#2D5A27]/85">
+                            <Button asChild size="lg" variant="menu-brand">
                                 <Link href={`/menu?location=${location.slug}`}>View Menu</Link>
                             </Button>
-                            <Button asChild size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+                            <Button asChild size="lg" variant="tertiary-brand">
                                 <a href={`tel:${location.phone}`}>
                                     <Phone className="mr-2 size-4" /> Call to Order
                                 </a>
@@ -243,7 +243,7 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                     </div>
 
                     <div className="mt-8 text-center">
-                        <Button asChild variant="outline" size="lg" className="border-border text-foreground">
+                        <Button asChild variant="tertiary-brand" size="lg">
                             <Link href="/menu">Browse the Full Menu &rarr;</Link>
                         </Button>
                     </div>

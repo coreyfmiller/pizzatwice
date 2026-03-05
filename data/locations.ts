@@ -16,7 +16,7 @@ export const locations: Location[] = [
         address: "291 Restigouche Road, Oromocto, NB, E2V 2H5",
         province: "NB",
         phone: "506-446-9111",
-        website: "https://www.pizzatwiceoromocto.ca",
+        website: "/order",
         hours: "Sun-Thu: 11:00am - 10:00pm | Fri-Sat: 11:00am - 11:00pm",
         status: "Accepting Online Order"
     },
