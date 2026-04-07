@@ -34,11 +34,11 @@ export function OrderingNoticeDialog() {
         <Dialog open={open} onOpenChange={handleOpenChange}>
             <DialogContent className="sm:max-w-md">
                 <DialogHeader>
-                    <DialogTitle className="text-xl">Order Direct &amp; Save 20%</DialogTitle>
+                    <DialogTitle className="text-xl">Important Ordering Notice</DialogTitle>
                     <DialogDescription className="text-base leading-relaxed pt-2">
-                        Online prices through third-party apps include high service fees.
-                        Save up to 20% on your total by calling us directly for pickup.
-                        Get the same pizza for a better price.
+                        Skip the fees on Skip, DoorDash, and Uber Eats! For our best
+                        prices and zero service charges, please call the restaurant
+                        directly to place your pickup order.
                     </DialogDescription>
                 </DialogHeader>
                 <DialogFooter className="flex-col gap-2 sm:flex-col">
