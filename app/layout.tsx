@@ -6,12 +6,16 @@ import './globals.css'
 const _inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 
 export const metadata: Metadata = {
-  title: 'Pizza Twice | More Than Just Great Pizza',
+  title: 'Pizza Twice Oromocto | More Than Just Great Pizza',
   description:
     "Atlantic Canada's favorite pizza franchise. 18+ locations, 35 years of success. Join the Pizza Twice family today.",
   generator: 'v0.app',
   icons: {
     icon: [
+      {
+        url: '/favicon.ico',
+        sizes: 'any',
+      },
       {
         url: '/icon-light-32x32.png',
         media: '(prefers-color-scheme: light)',
