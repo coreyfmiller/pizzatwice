@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Info, Pizza, Flame } from "lucide-react"
 import { locations } from "@/data/locations"
 import { LocationBanner } from "@/components/location-banner"
+import { OrderingNoticeDialog } from "@/components/ordering-notice-dialog"
 
 export const metadata = {
     title: "Menu | Pizza Twice",
@@ -78,6 +79,7 @@ export default async function MenuPage({
                 <div className="mx-auto max-w-6xl px-4 lg:px-8">
 
                     {activeLocation && <LocationBanner location={activeLocation} />}
+                    {activeLocation && <OrderingNoticeDialog key={activeLocation.slug} phone={activeLocation.phone} />}
                     <div className="mb-16 text-center">
                         <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl border-b-4 border-primary inline-block pb-3">
                             Our Menu

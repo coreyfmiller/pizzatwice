@@ -19,6 +19,7 @@ const navLinks = [
   { label: "Locations", href: "/#locations" },
   { label: "About Us", href: "/#about" },
   { label: "Contact Us", href: "/#contact" },
+  { label: "Test Menu", href: "/test-menu" },
 ]
 
 export function Header() {
