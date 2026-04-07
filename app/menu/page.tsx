@@ -79,7 +79,7 @@ export default async function MenuPage({
                 <div className="mx-auto max-w-6xl px-4 lg:px-8">
 
                     {activeLocation && <LocationBanner location={activeLocation} />}
-                    {activeLocation && <OrderingNoticeDialog key={activeLocation.slug} phone={activeLocation.phone} />}
+                    {activeLocation && <OrderingNoticeDialog key={activeLocation.slug} />}
                     <div className="mb-16 text-center">
                         <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl border-b-4 border-primary inline-block pb-3">
                             Our Menu

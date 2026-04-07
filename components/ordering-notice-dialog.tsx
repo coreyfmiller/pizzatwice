@@ -1,7 +1,6 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Phone } from "lucide-react"
 import {
     Dialog,
     DialogContent,
@@ -15,7 +14,7 @@ import { Button } from "@/components/ui/button"
 
 const STORAGE_KEY = "ordering-notice-dismissed"
 
-export function OrderingNoticeDialog({ phone }: { phone: string }) {
+export function OrderingNoticeDialog() {
     const [open, setOpen] = useState(false)
 
     useEffect(() => {
@@ -43,14 +42,9 @@ export function OrderingNoticeDialog({ phone }: { phone: string }) {
                     </DialogDescription>
                 </DialogHeader>
                 <DialogFooter className="flex-col gap-2 sm:flex-col">
-                    <Button asChild size="lg" variant="primary-brand" className="w-full">
-                        <a href={`tel:${phone}`}>
-                            <Phone className="mr-2 size-4" /> Call Now
-                        </a>
-                    </Button>
                     <DialogClose asChild>
-                        <Button variant="outline" size="lg" className="w-full">
-                            Continue
+                        <Button variant="primary-brand" size="lg" className="w-full">
+                            Got It
                         </Button>
                     </DialogClose>
                 </DialogFooter>
