@@ -7,6 +7,7 @@ import { CustomerFaq } from "@/components/customer-faq"
 import { FranchiseSection } from "@/components/franchise-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
+import { MobileCallBar } from "@/components/mobile-call-bar"
 
 export default function HomePage() {
   return (
@@ -22,6 +23,7 @@ export default function HomePage() {
         <ContactSection />
       </main>
       <Footer />
+      <MobileCallBar />
     </>
   )
 }

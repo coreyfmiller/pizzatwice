@@ -178,6 +178,11 @@ export default async function LocationPage({ params }: { params: Promise<{ slug:
                                     <Phone className="mr-2 size-4" /> Call to Order
                                 </a>
                             </Button>
+                            <Button asChild size="lg" variant="tertiary-brand">
+                                <a href={mapsLinkUrl} target="_blank" rel="noopener noreferrer">
+                                    <MapPin className="mr-2 size-4" /> Get Directions
+                                </a>
+                            </Button>
                         </div>
                     </div>
 

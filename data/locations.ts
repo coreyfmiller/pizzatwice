@@ -7,7 +7,7 @@ export type Location = {
     website: string
     hours: string
     status: string
-    description?: string
+    description: string
 }
 
 export const locations: Location[] = [
@@ -85,9 +85,8 @@ export const locations: Location[] = [
         phone: "506-453-0099",
         website: "/menu",
         hours: "Mon: 11am-8pm | Tue-Thu: 11am-9pm | Fri: 11am-10pm | Sat: 11am-9pm | Sun: 3pm-8pm",
+        status: "Order by Phone",
         description: "Located at the Ultramar on Canada Street in the Marysville area of Fredericton. Quick pickup and late-night weekend hours."
-    },
-        status: "Order by Phone"
     },
     {
         slug: "grand-barachois-valufoods",
@@ -97,27 +96,30 @@ export const locations: Location[] = [
         phone: "506-532-6623",
         website: "/menu",
         hours: "Mon-Fri: 6:00am - 9:00pm | Sat-Sun: 7:00am - 9:00pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Inside Grand Barachois Valufoods, serving the Shediac and Cap-Pele area. Open early for breakfast with pizza available all day."
     },
     {
         slug: "churchs-valufood-and-esso",
-        name: "Pizza Twice at Church’s Valufood and Esso",
+        name: "Pizza Twice at Church's Valufood and Esso",
         address: "3966 Gabarus Hwy, Marion Bridge, NS, B1K 1A7",
         province: "NS",
         phone: "902-727-2685",
         website: "/menu",
         hours: "Mon-Sat: 9:00am - 7:00pm | Sun: 12:00pm - 6:00pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Serving the Marion Bridge and Gabarus area of Cape Breton. Convenient one-stop shop for fuel, groceries, and fresh Pizza Twice."
     },
     {
         slug: "mccloskeys-general-store",
-        name: "Pizza Twice at McCloskey’s General Store",
+        name: "Pizza Twice at McCloskey's General Store",
         address: "6156 Route 8, Boiestown, NB, E6A 1M3",
         province: "NB",
         phone: "506-369-2282",
         website: "/menu",
         hours: "Mon-Thu: 9:00am - 7:00pm | Fri-Sat: 9:00am - 9:00pm | Sun: 11:00am - 7:00pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Located in McCloskey's General Store on Route 8 in Boiestown. A community favourite in the Miramichi region with extended weekend hours."
     },
     {
         slug: "cornwallis",
@@ -127,7 +129,8 @@ export const locations: Location[] = [
         phone: "902-638-3518",
         website: "/menu",
         hours: "Mon-Sat: 11:00am - 7:00pm | Sun: 12:00pm - 6:00pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Serving the Cornwallis and Annapolis Valley area off Highway 1. Fresh pizza, subs, and donairs for lunch and dinner."
     },
     {
         slug: "upper-musquodoboit-mini-mart",
@@ -137,7 +140,8 @@ export const locations: Location[] = [
         phone: "902-568-2999",
         website: "/menu",
         hours: "Mon-Sat: 9:00am - 8:00pm | Sun: 12:00pm - 5:00pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Bringing Pizza Twice to the Musquodoboit Valley. Located in the Mini Mart on Highway 336, serving the rural Halifax County community."
     },
     {
         slug: "bridgetown",
@@ -147,7 +151,8 @@ export const locations: Location[] = [
         phone: "902-665-4788",
         website: "/menu",
         hours: "Mon-Sat: 10:00am - 8:30pm | Sun: 10:00am - 4:30pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "On Queen Street in historic Bridgetown, Nova Scotia. Pizza, broaster chicken, and more serving the South Shore community."
     },
     {
         slug: "parkview-superette",
@@ -157,17 +162,19 @@ export const locations: Location[] = [
         phone: "506-237-2299",
         website: "/menu",
         hours: "Mon-Sun: 8:00am - 8:00pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Inside Parkview Superette in Belledune, serving the Chaleur Bay region. Open 7 days a week with fresh pizza all day."
     },
     {
         slug: "collins-convenience",
-        name: "Pizza Twice at Collin’s Convenience",
+        name: "Pizza Twice at Collin's Convenience",
         address: "14 Eldon Street, Fortune, NL",
         province: "NL",
         phone: "709-832-1163",
         website: "/menu",
         hours: "Mon-Sun: 8:00am - 8:00pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Pizza Twice reaches Newfoundland! Located in Collin's Convenience in Fortune on the Burin Peninsula. Open daily."
     },
     {
         slug: "marystown",
@@ -177,7 +184,8 @@ export const locations: Location[] = [
         phone: "709-357-3008",
         website: "/menu",
         hours: "Mon-Sun: 8:00am - 8:00pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Serving Marystown and the Burin Peninsula with the same great Pizza Twice recipes Atlantic Canada knows and loves. Open 7 days."
     },
     {
         slug: "penniac-ultramar",
@@ -187,6 +195,7 @@ export const locations: Location[] = [
         phone: "506-474-1587",
         website: "/menu",
         hours: "Sun-Wed: 11:00 am - 8:00 pm | Thu-Sat: 11:00 am - 9:00 pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "At the Gateway Convenience Ultramar in Penniac, just outside Fredericton. Convenient stop for fresh pizza on Route 628."
     }
 ]
