@@ -3,11 +3,9 @@ import Link from "next/link"
 import { Facebook, Instagram, Twitter } from "lucide-react"
 
 const footerLinks = [
-  { label: "Home", href: "/" },
-  { label: "About Us", href: "/#about" },
+  { label: "Menu", href: "/menu" },
   { label: "Locations", href: "/#locations" },
-  { label: "Franchise Inquiries", href: "/#franchise" },
-  { label: "Contact Us", href: "/#contact" },
+  { label: "Franchise Opportunities", href: "/#franchise" },
 ]
 
 const socialLinks = [

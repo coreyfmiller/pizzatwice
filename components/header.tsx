@@ -14,11 +14,9 @@ import {
 } from "@/components/ui/sheet"
 
 const navLinks = [
-  { label: "Home", href: "/" },
   { label: "Menu", href: "/menu" },
   { label: "Locations", href: "/#locations" },
-  { label: "About Us", href: "/#about" },
-  { label: "Contact Us", href: "/#contact" },
+  { label: "Franchise", href: "/#franchise" },
 ]
 
 export function Header() {
@@ -59,7 +57,7 @@ export function Header() {
               </Link>
             ))}
             <Button asChild variant="primary-brand" className="ml-3">
-              <Link href="/#franchise-edge">Own a Franchise</Link>
+              <Link href="/#locations">Order Now</Link>
             </Button>
           </nav>
 
