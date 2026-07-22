@@ -7,6 +7,7 @@ export type Location = {
     website: string
     hours: string
     status: string
+    description?: string
 }
 
 export const locations: Location[] = [
@@ -18,7 +19,8 @@ export const locations: Location[] = [
         phone: "506-446-9111",
         website: "/order",
         hours: "Sun-Thu: 11:00am - 10:00pm | Fri-Sat: 11:00am - 11:00pm",
-        status: "Accepting Online Order"
+        status: "Accepting Online Order",
+        description: "The original Pizza Twice location, serving the Oromocto and CFB Gagetown community since 1989. Full dine-in, takeout, delivery, and online ordering available."
     },
     {
         slug: "edmundston",
@@ -28,7 +30,8 @@ export const locations: Location[] = [
         phone: "506-739-1976",
         website: "/menu",
         hours: "Tue, Wed, Sun: 11:00am - 8:00pm | Thu-Sat: 11:00am - 9:00pm | Mon: Closed",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Serving the Edmundston community with the same great Pizza Twice recipes. Dine-in and takeout with online ordering available."
     },
     {
         slug: "nackawic",
@@ -38,7 +41,8 @@ export const locations: Location[] = [
         phone: "506-575-0101",
         website: "/menu",
         hours: "Mon-Fri: 11:30am - 7:00pm | Sat: 1:00pm - 7:00pm | Sun: CLOSED",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Bringing Pizza Twice to the Nackawic area. Fresh pizzas, subs, and donairs made to order. Call ahead for quick pickup."
     },
     {
         slug: "hartland",
@@ -48,7 +52,8 @@ export const locations: Location[] = [
         phone: "506-375-4984",
         website: "/menu",
         hours: "Mon-Sat: 7:00am - 10:00pm | Sun: 8:00am - 9:00pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Located on Main Street in Hartland, home of the world's longest covered bridge. Early morning hours with full breakfast and pizza menu all day."
     },
     {
         slug: "canning-valufood",
@@ -58,7 +63,8 @@ export const locations: Location[] = [
         phone: "902-582-3555",
         website: "/menu",
         hours: "Mon-Sat: 8:00am - 9:00pm | Sun: 10:00am - 8:00pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Conveniently located inside Canning Valufood. Grab a fresh Pizza Twice pizza while you shop. Serving the Annapolis Valley community."
     },
     {
         slug: "florenceville-bristol",
@@ -68,7 +74,8 @@ export const locations: Location[] = [
         phone: "506-392-1159",
         website: "/menu",
         hours: "Mon-Tue: 11am-7pm | Wed-Thu: 11am-8pm | Fri: 11am-9pm | Sat: 12pm-8pm | Sun: 12pm-7pm",
-        status: "Order by Phone"
+        status: "Order by Phone",
+        description: "Serving Florenceville-Bristol and the surrounding Carleton County area with fresh pizzas, subs, and donairs made daily."
     },
     {
         slug: "marysville",
@@ -78,6 +85,8 @@ export const locations: Location[] = [
         phone: "506-453-0099",
         website: "/menu",
         hours: "Mon: 11am-8pm | Tue-Thu: 11am-9pm | Fri: 11am-10pm | Sat: 11am-9pm | Sun: 3pm-8pm",
+        description: "Located at the Ultramar on Canada Street in the Marysville area of Fredericton. Quick pickup and late-night weekend hours."
+    },
         status: "Order by Phone"
     },
     {
