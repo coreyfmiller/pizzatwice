@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer"
 import { Info, Pizza, Flame } from "lucide-react"
 import { locations } from "@/data/locations"
 import { LocationBanner } from "@/components/location-banner"
+import { LocationPicker } from "@/components/location-picker"
 import { OrderingNoticeDialog } from "@/components/ordering-notice-dialog"
 
 export const metadata = {
@@ -80,6 +81,7 @@ export default async function MenuPage({
 
                     {activeLocation && <LocationBanner location={activeLocation} />}
                     {activeLocation && <OrderingNoticeDialog key={activeLocation.slug} />}
+                    {!activeLocation && <LocationPicker />}
                     <div className="mb-16 text-center">
                         <h1 className="text-balance text-4xl font-bold tracking-tight text-foreground md:text-5xl lg:text-6xl border-b-4 border-primary inline-block pb-3">
                             Our Menu
