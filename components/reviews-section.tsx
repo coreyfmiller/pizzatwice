@@ -2,51 +2,63 @@ import { Star, Quote } from "lucide-react"
 
 const reviews = [
   {
-    name: "Kim C.",
+    name: "Courtney Wand",
     location: "Oromocto",
-    text: "My family and I have been enjoying Pizza Twice pizza, garlic fingers and donairs for many years. The food is always fresh, hot and delicious. The staff have always been polite and courteous. Keep up the great work!",
+    text: "Pizza Twice has been my favourite Pizza in Oromocto for over 20 years. They serve the best slice of pepperoni cheese I have ever eaten from anywhere. Their pizza looks like that of a Ninja Turtles, awesome!",
     rating: 5,
   },
   {
-    name: "Amanda",
+    name: "Michael Doucette",
+    location: "Oromocto",
+    text: "Pizza Twice is one of the better pizza places in Oromocto, very limited seating, more for take out. Clean, smells really nice. Recommend this establishment, family owned.",
+    rating: 5,
+  },
+  {
+    name: "Fantastic Ouellet",
+    location: null,
+    text: "I ordered a regular Donair for the first time from this place, and I must say it was the BEST Donair I've ever tasted and I've had donairs just about everywhere.",
+    rating: 5,
+  },
+  {
+    name: "Pat M",
+    location: null,
+    text: "Best pizza around by far! We eat here weekly and it's always very consistent and friendly staff.",
+    rating: 5,
+  },
+  {
+    name: "Chris Radl",
+    location: null,
+    text: "This is my favourite pizza. Unlike most places they actually put enough sauce on that you can taste it and that sauce does not taste sweet. The service has always been fair and friendly.",
+    rating: 5,
+  },
+  {
+    name: "Paul D",
+    location: null,
+    text: "When I asked for a wizard to be drawn on the box of my pizza the woman says it's not store policy, but none the less I received not only a delicious slice but also a glorious felt marker drawing of a wizard! 10/10",
+    rating: 5,
+  },
+  {
+    name: "Andrea Pierce",
+    location: null,
+    text: "Stopped by after the Canada Day Parade today and enjoyed two large pizzas on the picnic tables out front. Excellent pizzas, excellent service.",
+    rating: 5,
+  },
+  {
+    name: "Angelique",
+    location: null,
+    text: "First time customers and the staff went out of their way to give us everything we needed and introduced us to their rewards program offering us a special deal on the spot.",
+    rating: 5,
+  },
+  {
+    name: "Carmen P",
+    location: null,
+    text: "Our go to pizza place. Predictably delicious. We always order for pick up, always ready in under 20 minutes.",
+    rating: 5,
+  },
+  {
+    name: "Amanda Doupe",
     location: "Oromocto",
     text: "Always gets the order right and on time. Best pizza in Oromocto!",
-    rating: 5,
-  },
-  {
-    name: "Chris R.",
-    location: null,
-    text: "This is my favourite pizza. Unlike most places they actually put enough sauce on that you can taste it and it doesn't taste sweet. The service has always been friendly.",
-    rating: 5,
-  },
-  {
-    name: "Mr Forsythe",
-    location: null,
-    text: "An excellent place to get your favorite pizza or try one of their delicious speciality pizzas as well as tiger donairs. I would love to recommend a donair pizza, your taste buds will be rewarded.",
-    rating: 5,
-  },
-  {
-    name: "Mike",
-    location: null,
-    text: "This is my favorite local pizza joint. Always great food and staff is always friendly. Definitely get the cheesy donair fingers!",
-    rating: 5,
-  },
-  {
-    name: "J.C.",
-    location: null,
-    text: "I have had donairs in many places, but the donairs in Pizza Twice are second to none. The best way to have them is with onions, tomatoes, sauce and cheese. Outstanding!",
-    rating: 5,
-  },
-  {
-    name: "Mary F.",
-    location: null,
-    text: "Their noon slices deal is excellent. I enjoy their specialty pizzas, especially the donair pizza. A very good business that always helps the community.",
-    rating: 5,
-  },
-  {
-    name: "Collin L.",
-    location: null,
-    text: "Staff is always nice, food is fresh, dough is fresh and cooked perfectly.",
     rating: 5,
   },
 ]
