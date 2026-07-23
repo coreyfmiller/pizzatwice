@@ -70,14 +70,16 @@ export async function POST(req: NextRequest) {
   try {
     const { messages } = await req.json()
 
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" })
+    const model = genAI.getGenerativeModel({
+      model: "gemini-2.5-flash",
+      systemInstruction: SYSTEM_PROMPT,
+    })
 
     const chat = model.startChat({
       history: messages.slice(0, -1).map((msg: any) => ({
         role: msg.role === "user" ? "user" : "model",
         parts: [{ text: msg.content }],
       })),
-      systemInstruction: SYSTEM_PROMPT,
     })
 
     const lastMessage = messages[messages.length - 1]
