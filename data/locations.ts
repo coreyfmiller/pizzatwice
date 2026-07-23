@@ -57,7 +57,7 @@ export const locations: Location[] = [
     },
     {
         slug: "canning-valufood",
-        name: "Pizza Twice at Canning Valufood",
+        name: "Pizza Twice Canning",
         address: "9380 Main Street, Canning, NS, B0P 1H0",
         province: "NS",
         phone: "902-582-3555",
@@ -90,7 +90,7 @@ export const locations: Location[] = [
     },
     {
         slug: "grand-barachois-valufoods",
-        name: "Pizza Twice at Grand Barachois Valufoods",
+        name: "Pizza Twice Grand Barachois",
         address: "1343 Route 133, Grand Barachois, NB, E4P 8C7",
         province: "NB",
         phone: "506-532-6623",
@@ -101,7 +101,7 @@ export const locations: Location[] = [
     },
     {
         slug: "churchs-valufood-and-esso",
-        name: "Pizza Twice at Church's Valufood and Esso",
+        name: "Pizza Twice Marion Bridge",
         address: "3966 Gabarus Hwy, Marion Bridge, NS, B1K 1A7",
         province: "NS",
         phone: "902-727-2685",
@@ -112,7 +112,7 @@ export const locations: Location[] = [
     },
     {
         slug: "mccloskeys-general-store",
-        name: "Pizza Twice at McCloskey's General Store",
+        name: "Pizza Twice Boiestown",
         address: "6156 Route 8, Boiestown, NB, E6A 1M3",
         province: "NB",
         phone: "506-369-2282",
@@ -134,7 +134,7 @@ export const locations: Location[] = [
     },
     {
         slug: "upper-musquodoboit-mini-mart",
-        name: "Pizza Twice at Upper Musquodoboit Mini Mart",
+        name: "Pizza Twice Upper Musquodoboit",
         address: "22 Hwy 336, Upper Musquodoboit NS, B0N 2M0",
         province: "NS",
         phone: "902-568-2999",
@@ -156,7 +156,7 @@ export const locations: Location[] = [
     },
     {
         slug: "parkview-superette",
-        name: "Pizza Twice at Parkview Superette",
+        name: "Pizza Twice Belledune",
         address: "3711 Main St Belledune, NB, E8G 2K1",
         province: "NB",
         phone: "506-237-2299",
@@ -167,7 +167,7 @@ export const locations: Location[] = [
     },
     {
         slug: "collins-convenience",
-        name: "Pizza Twice at Collin's Convenience",
+        name: "Pizza Twice Fortune",
         address: "14 Eldon Street, Fortune, NL",
         province: "NL",
         phone: "709-832-1163",
@@ -189,7 +189,7 @@ export const locations: Location[] = [
     },
     {
         slug: "penniac-ultramar",
-        name: "Pizza Twice at Penniac Ultramar",
+        name: "Pizza Twice Penniac",
         address: "22 Route 628 Penniac NB E3A 8X3",
         province: "NB",
         phone: "506-474-1587",
