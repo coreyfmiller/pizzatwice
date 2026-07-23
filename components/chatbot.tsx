@@ -67,7 +67,7 @@ export function Chatbot() {
           className="flex items-center gap-2 rounded-full bg-[#E63946] px-5 py-3 text-sm font-bold text-white shadow-xl hover:bg-[#E63946]/90 transition-colors"
         >
           <MessageCircle className="size-5" />
-          Ask Us
+          The Pizza Oven
         </button>
       ) : (
         <div className="flex flex-col w-[340px] sm:w-[380px] h-[480px] bg-background border border-border shadow-2xl rounded-2xl overflow-hidden">
@@ -76,8 +76,8 @@ export function Chatbot() {
             <div className="flex items-center gap-2">
               <MessageCircle className="size-4" />
               <div>
-                <p className="text-sm font-bold">Pizza Twice</p>
-                <p className="text-[0.65rem] opacity-80">Ask about locations, menu, hours</p>
+                <p className="text-sm font-bold">The Pizza Oven</p>
+                <p className="text-[0.65rem] opacity-80">Locations, menu, hours & more</p>
               </div>
             </div>
             <button onClick={() => setIsOpen(false)} className="p-1 rounded hover:bg-white/20 transition-colors">
