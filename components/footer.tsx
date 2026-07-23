@@ -1,17 +1,9 @@
 import Image from "next/image"
-import Link from "next/link"
-import { Facebook, Instagram, Twitter } from "lucide-react"
 
 const footerLinks = [
   { label: "Menu", href: "/menu" },
   { label: "Locations", href: "/#locations" },
   { label: "Franchise Opportunities", href: "/#franchise" },
-]
-
-const socialLinks = [
-  { label: "Facebook", href: "#", icon: Facebook },
-  { label: "Instagram", href: "#", icon: Instagram },
-  { label: "Twitter", href: "#", icon: Twitter },
 ]
 
 export function Footer() {
@@ -44,18 +36,11 @@ export function Footer() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-4">
-            {socialLinks.map((social) => (
-              <Link
-                key={social.label}
-                href={social.href}
-                className="text-muted-foreground transition-colors hover:text-primary"
-                aria-label={social.label}
-              >
-                <social.icon className="size-5" />
-              </Link>
-            ))}
-          </div>
+          <p className="text-sm text-muted-foreground">
+            <a href="mailto:pizzatwice@hotmail.com" className="hover:text-primary transition-colors">
+              pizzatwice@hotmail.com
+            </a>
+          </p>
         </div>
 
         <div className="mt-10 border-t border-border pt-6 text-center">
