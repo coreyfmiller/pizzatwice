@@ -8,6 +8,7 @@ import { FranchiseSection } from "@/components/franchise-section"
 import { ContactSection } from "@/components/contact-section"
 import { Footer } from "@/components/footer"
 import { MobileCallBar } from "@/components/mobile-call-bar"
+import { Chatbot } from "@/components/chatbot"
 
 export default function HomePage() {
   return (
@@ -24,6 +25,7 @@ export default function HomePage() {
       </main>
       <Footer />
       <MobileCallBar />
+      <Chatbot />
     </>
   )
 }
