@@ -34,13 +34,13 @@ export function Footer() {
 
           <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2" aria-label="Footer navigation">
             {footerLinks.map((link) => (
-              <Link
+              <a
                 key={link.href}
                 href={link.href}
                 className="text-sm text-muted-foreground transition-colors hover:text-foreground"
               >
                 {link.label}
-              </Link>
+              </a>
             ))}
           </nav>
 

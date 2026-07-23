@@ -36,21 +36,18 @@ export function HeroSection() {
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <Button
-            asChild
-            size="lg"
-            className="h-12 px-8 text-base shadow-lg bg-green-600 hover:bg-green-700 text-white font-bold"
+          <a
+            href="/#locations"
+            className="inline-flex items-center justify-center h-12 px-8 text-base shadow-lg bg-green-600 hover:bg-green-700 text-white font-bold rounded-md transition-colors"
           >
-            <Link href="/#locations">Find a Location & Order</Link>
-          </Button>
-          <Button
-            asChild
-            size="lg"
-            variant="tertiary-brand"
-            className="h-12 px-8 text-base"
+            Find a Location & Order
+          </a>
+          <a
+            href="/#franchise-edge"
+            className="inline-flex items-center justify-center h-12 px-8 text-base rounded-md border border-border text-foreground/80 hover:text-foreground hover:bg-muted transition-colors"
           >
-            <Link href="/#franchise-edge">Own a Franchise</Link>
-          </Button>
+            Own a Franchise
+          </a>
         </div>
       </div>
 

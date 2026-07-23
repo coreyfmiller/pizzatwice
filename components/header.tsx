@@ -14,9 +14,9 @@ import {
 } from "@/components/ui/sheet"
 
 const navLinks = [
-  { label: "Menu", href: "/menu" },
-  { label: "Locations", href: "/#locations" },
-  { label: "Franchise", href: "/#franchise" },
+  { label: "Menu", href: "/menu", isPage: true },
+  { label: "Locations", href: "/#locations", isPage: false },
+  { label: "Franchise", href: "/#franchise", isPage: false },
 ]
 
 export function Header() {
@@ -26,10 +26,10 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50">
       {/* Utility Bar */}
       <div className="bg-[#E63946] py-2 text-center text-[10px] font-black tracking-[0.2em] text-white">
-        <Link href="/#locations" className="flex items-center justify-center gap-2 transition-opacity hover:opacity-90">
+        <a href="/#locations" className="flex items-center justify-center gap-2 transition-opacity hover:opacity-90">
           <MapPin className="size-3" />
           FIND YOUR LOCAL STORE TO CALL & ORDER
-        </Link>
+        </a>
       </div>
 
       {/* Main Header */}
@@ -47,17 +47,27 @@ export function Header() {
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="rounded-md px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {navLinks.map((link) =>
+              link.isPage ? (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="rounded-md px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
+                >
+                  {link.label}
+                </Link>
+              ) : (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="rounded-md px-3 py-2 text-sm font-medium text-foreground/80 transition-colors hover:text-foreground"
+                >
+                  {link.label}
+                </a>
+              )
+            )}
             <Button asChild variant="primary-brand" className="ml-3">
-              <Link href="/#locations">Order Now</Link>
+              <a href="/#locations">Order Now</a>
             </Button>
           </nav>
 
@@ -74,7 +84,7 @@ export function Header() {
 
               <div className="p-4">
                 {/* Mobile Specific Store CTA */}
-                <Link
+                <a
                   href="/#locations"
                   onClick={() => setOpen(false)}
                   className="mb-6 flex items-center justify-between rounded-xl bg-primary/10 p-4 font-bold text-primary ring-1 ring-primary/20"
@@ -84,28 +94,39 @@ export function Header() {
                     <span>Find Your Store to Order</span>
                   </div>
                   <ChevronRight className="size-4" />
-                </Link>
+                </a>
 
                 <nav className="flex flex-col gap-1" aria-label="Mobile navigation">
-                  {navLinks.map((link) => (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      onClick={() => setOpen(false)}
-                      className="rounded-lg px-4 py-3 text-lg font-bold text-foreground/80 transition-colors hover:bg-muted hover:text-foreground"
-                    >
-                      {link.label}
-                    </Link>
-                  ))}
+                  {navLinks.map((link) =>
+                    link.isPage ? (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setOpen(false)}
+                        className="rounded-lg px-4 py-3 text-lg font-bold text-foreground/80 transition-colors hover:bg-muted hover:text-foreground"
+                      >
+                        {link.label}
+                      </Link>
+                    ) : (
+                      <a
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setOpen(false)}
+                        className="rounded-lg px-4 py-3 text-lg font-bold text-foreground/80 transition-colors hover:bg-muted hover:text-foreground"
+                      >
+                        {link.label}
+                      </a>
+                    )
+                  )}
                   <div className="mt-4 border-t border-border pt-4">
                     <Button
                       asChild
                       variant="primary-brand"
                       className="w-full h-12 text-base font-black"
                     >
-                      <Link href="/#franchise-edge" onClick={() => setOpen(false)}>
+                      <a href="/#franchise-edge" onClick={() => setOpen(false)}>
                         Own a Franchise
-                      </Link>
+                      </a>
                     </Button>
                   </div>
                 </nav>

@@ -94,9 +94,9 @@ export function FranchiseEdgeSection() {
         </div>
 
         <div className="mt-16 text-center">
-          <Button asChild size="lg" variant="primary-brand" className="h-14 px-10 text-lg font-black shadow-xl shadow-primary/20">
-            <Link href="/#franchise">Submit an Inquiry</Link>
-          </Button>
+          <a href="/#franchise" className="inline-flex items-center justify-center h-14 px-10 text-lg font-black rounded-md bg-[#E63946] text-white hover:bg-[#E63946]/90 shadow-xl shadow-[#E63946]/20 transition-colors">
+            Submit an Inquiry
+          </a>
         </div>
       </div>
     </section>
