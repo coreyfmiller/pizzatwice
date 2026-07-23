@@ -67,7 +67,7 @@ export function Chatbot() {
           className="flex items-center gap-2 rounded-full bg-[#E63946] px-5 py-3 text-sm font-bold text-white shadow-xl hover:bg-[#E63946]/90 transition-colors"
         >
           <MessageCircle className="size-5" />
-          The Pizza Oven
+          Il Forno
         </button>
       ) : (
         <div className="flex flex-col w-[340px] sm:w-[380px] h-[480px] bg-background border border-border shadow-2xl rounded-2xl overflow-hidden">
@@ -76,7 +76,7 @@ export function Chatbot() {
             <div className="flex items-center gap-2">
               <MessageCircle className="size-4" />
               <div>
-                <p className="text-sm font-bold">The Pizza Oven</p>
+                <p className="text-sm font-bold">Il Forno</p>
                 <p className="text-[0.65rem] opacity-80">Locations, menu, hours & more</p>
               </div>
             </div>
