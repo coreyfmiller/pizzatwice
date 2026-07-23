@@ -40,7 +40,7 @@ export function LocationsSection() {
   })
 
   return (
-    <section id="locations" className="border-t border-border bg-muted/20 py-20 lg:py-28">
+    <section id="locations" className="scroll-mt-28 border-t border-border bg-muted/20 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mb-14 text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-primary">

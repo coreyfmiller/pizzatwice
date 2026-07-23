@@ -41,7 +41,7 @@ export function HeroSection() {
             size="lg"
             className="h-12 px-8 text-base shadow-lg bg-green-600 hover:bg-green-700 text-white font-bold"
           >
-            <Link href="#locations">Find a Location & Order</Link>
+            <Link href="/#locations">Find a Location & Order</Link>
           </Button>
           <Button
             asChild
@@ -49,7 +49,7 @@ export function HeroSection() {
             variant="tertiary-brand"
             className="h-12 px-8 text-base"
           >
-            <Link href="#franchise-edge">Own a Franchise</Link>
+            <Link href="/#franchise-edge">Own a Franchise</Link>
           </Button>
         </div>
       </div>

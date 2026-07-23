@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label"
 
 export function ContactSection() {
   return (
-    <section id="contact" className="border-t border-border bg-background py-20 lg:py-28">
+    <section id="contact" className="scroll-mt-28 border-t border-border bg-background py-20 lg:py-28">
       <div className="mx-auto max-w-3xl px-4 lg:px-8">
         <div className="mb-14 text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-primary">

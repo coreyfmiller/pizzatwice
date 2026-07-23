@@ -42,7 +42,7 @@ const faqs = [
 
 export function FranchiseSection() {
   return (
-    <section id="franchise" className="border-t border-border bg-muted/30 py-20 lg:py-28">
+    <section id="franchise" className="scroll-mt-28 border-t border-border bg-muted/30 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mb-14 text-center">
           <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-primary">

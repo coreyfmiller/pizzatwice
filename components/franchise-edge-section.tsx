@@ -5,7 +5,7 @@ import { CheckCircle2, DollarSign, MapPin, TrendingUp, Trophy, Users } from "luc
 
 export function FranchiseEdgeSection() {
   return (
-    <section id="franchise-edge" className="border-t border-border bg-background py-20 lg:py-32 overflow-hidden">
+    <section id="franchise-edge" className="scroll-mt-28 border-t border-border bg-background py-20 lg:py-32 overflow-hidden">
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="mb-16 text-center">
           <p className="mb-3 text-sm font-bold uppercase tracking-[0.2em] text-primary">
@@ -95,7 +95,7 @@ export function FranchiseEdgeSection() {
 
         <div className="mt-16 text-center">
           <Button asChild size="lg" variant="primary-brand" className="h-14 px-10 text-lg font-black shadow-xl shadow-primary/20">
-            <Link href="#franchise">Submit an Inquiry</Link>
+            <Link href="/#franchise">Submit an Inquiry</Link>
           </Button>
         </div>
       </div>
